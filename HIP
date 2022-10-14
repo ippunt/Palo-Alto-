@@ -1,2 +1,4 @@
+1. HIP Troubleshooting - You need to generate the HIP report to see what is going on. 
+
 debug user-id dump hip-report ip <PrivateIP> user domain\user computer <Hostname>
 debug user-id dump hip-report ip 10.1.1.1 user acco\bob computer WS501
