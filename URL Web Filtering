@@ -1,0 +1,7 @@
+1. How to block admin login page.
+
+
+1. 
+Object > URL Category >
+Create a URl list with the server  IP/subdir    1.1.1.1/admin
+Put that category on a security Policy. 
