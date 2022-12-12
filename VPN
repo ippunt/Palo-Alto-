@@ -1,0 +1,5 @@
+1. Site to site with DHCP?
+
+
+
+1) It appears Dynamic DNS is not necessary. You can make the DHCP VPN device an initiatior and the other device which hopefully has a static IP passive. 
