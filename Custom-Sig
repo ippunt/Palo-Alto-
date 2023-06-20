@@ -5,3 +5,5 @@ These are the four categories that the PA Firewall will allow you to capture tra
 
 Transaction will match on one packet.
 Session can match on multiple packets. 
+
+Let's go through the steps completely and see if we can get a custom signature working for ICMP redirect prevention. 
