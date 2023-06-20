@@ -12,3 +12,5 @@ Let's go through the steps completely and see if we can get a custom signature w
 Packet capture has disabled, single packet and extended. By default extended is 5 packets. Device > Setup > Content-ID > Change Length. 
 
 Creating the Condition:
+Context:
+Pattern:
