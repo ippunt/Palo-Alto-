@@ -14,3 +14,8 @@ Packet capture has disabled, single packet and extended. By default extended is 
 Creating the Condition:
 Context:
 Pattern:
+
+
+ICMP Redirect:
+r = IP(src="0.0.0.0", dst="0.0.0.0") / ICMP( type=5, code=1, gw="1.1.1.1" )/"TURLES_turles_Turtles"
+send(r)
