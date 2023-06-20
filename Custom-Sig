@@ -7,3 +7,6 @@ Transaction will match on one packet.
 Session can match on multiple packets. 
 
 Let's go through the steps completely and see if we can get a custom signature working for ICMP redirect prevention. 
+
+
+Packet capture has disabled, single packet and extended. By default extended is 5 packets. Device > Setup > Content-ID > Change Length. 
