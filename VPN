@@ -1,11 +1,18 @@
 1. Site to site with DHCP?
 2. Site to site Dependencies
-
+3. Some usful CLI
 
 
 1) It appears Dynamic DNS is not necessary. You can make the DHCP VPN device an initiatior and the other device which hopefully has a static IP passive. If peer address
-is dynamic or FQDN you will need a peer identification. Both peers need the same identification. I don't think this needs to be the Dynamic DNS address. The options are
-FQDN, IP address, KEYID, User FQDN email address. As long as both sides have the asymetrical ids they are good peer<->local. 
+is dynamic or FQDN you will need a peer identification. Both peers need the same identification just swapped local vs remote.The options are FQDN, IP address, KEYID, User FQDN email address. As long as both sides have the asymetrical ids they are good peer<->local. 
 
 
-2) HAGLE  Hash, authentication, group, lifetime, encryption. 
+2) HAGLE  Hash, authentication, group, lifetime, encryption. Make sure they are perfect you do not want negotiation. Do not leave it up to negotation. Even PA to PA issues.
+
+
+3)
+test vpn ike-sa gateway  My_Ike_Gateway;
+show vpn ike-sa gateway My_Ike_Gateway;
+test vpn ipsec-sa tunnel My_Tunnel;
+show vpn ipsec-sa tunnel My_Tunnel;
+show vpn flow name My_Site_To_Site;
