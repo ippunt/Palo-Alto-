@@ -2,6 +2,7 @@
 2. Site to site Dependencies
 3. Some usful CLI
 4. GRE Woes
+5. Proxy IDs
 
 
 1) It appears Dynamic DNS is not necessary. You can make the DHCP VPN device an initiatior and the other device which hopefully has a static IP passive. If peer address
@@ -21,3 +22,5 @@ show vpn flow name My_Site_To_Site;
 4)
 Packet passes to GRE tunnel. Firewall does not create a session nor security policy lookup. However, when the firewall receives a packet it creates a session and security lookup. 
 No QoS, Cannot be GRE and also be decryption broker, And no NAT. 
+
+5) They are name ASCII sorted so for overlapping ensure the one you want to get hit first is ASCII alphabetically sorted as such. 
