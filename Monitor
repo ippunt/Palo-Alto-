@@ -1,0 +1,1 @@
+If you monitor from the ingress interface you will see bi-directional traffic. If you NAT you will see the traffic Pre-Nat.
