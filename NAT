@@ -1,1 +1,3 @@
-Destination NAT- The weirdist thing is probably looking at the NAT configuration and it has the Origianl packet source and destination zone as Outside or Untrust. The original packet source and dest is outside. While the security policy has post nat zone. So, if the security policy is any ip and port just zone DMZ. The Zones look like the dont match at all.
+Destination NAT- The weirdist thing is probably looking at the NAT configuration and
+it has the Origianl packet source and destination zone as Outside or Untrust.
+The original packet source and dest is outside. While the security policy has post nat zone. So, if the security policy is any ip and port just zone DMZ. The Zones look like the dont match at all.
