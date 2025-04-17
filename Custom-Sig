@@ -1,5 +1,5 @@
 You will need a custom object to then put that within Security Policy > Security Profile.
-  Custom Objects are only Data Patterns, Spyware, Vulnerability and URL category.
+Custom Objects are only Data Patterns, Spyware, Vulnerability and URL category.
 
 These are the four categories that the PA Firewall will allow you to capture traffic for. 
 
