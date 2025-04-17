@@ -1,4 +1,9 @@
-You will need a custom object to then put that within Security Policy > Security Profile.
+1. Notes about it
+2. Doing it on the PA
+3. Sending unique Data
+
+
+1)You will need a custom object to then put that within Security Policy > Security Profile.
 Custom Objects are only Data Patterns, Spyware, Vulnerability and URL category.
 These are the four categories that the PA Firewall will allow you to capture traffic for. 
 
@@ -7,14 +12,15 @@ Session can match on multiple packets.
 
 Let's go through the steps completely and see if we can get a custom signature working for ICMP redirect prevention. 
 
-
 Packet capture has disabled, single packet and extended. By default extended is 5 packets. Device > Setup > Content-ID > Change Length. 
 
+2) To be continued
 Creating the Condition:
 Context:
 Pattern:
 
 
+3)
 ICMP Redirect:
 r = IP(src="0.0.0.0", dst="0.0.0.0") / ICMP( type=5, code=1, gw="1.1.1.1" )/"TURLES_turles_Turtles"
 send(r)
