@@ -3,6 +3,9 @@
 3. Some usful CLI
 4. GRE Woes
 5. Proxy IDs
+6. Global Counters Troubleshooting something with no explanation or answer. 
+7. Luke has some good stuff but I didn't pin all the good pages. 
+8. There is no nested tunneling
 
 
 1) It appears Dynamic DNS is not necessary. You can make the DHCP VPN device an initiatior and the other device which hopefully has a static IP passive. If peer address
@@ -24,3 +27,16 @@ Packet passes to GRE tunnel. Firewall does not create a session nor security pol
 No QoS, Cannot be GRE and also be decryption broker, And no NAT. 
 
 5) They are name ASCII sorted so for overlapping ensure the one you want to get hit first is ASCII alphabetically sorted as such. 
+
+6) 
+https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClXOCA0
+show counter global filter severity drop
+show counter global filter severity drop delta yes; drop over a specific 
+show counter interface tunnel.51
+
+7) https://networkdirection.net/articles/firewalls/troubleshooting-palo-alto-firewalls/
+
+8) https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLoyCAG
+flow_tunnel_encap_err    2 0   drop flow  tunnel  Packet dropped: tunnel encapsulation error
+flow_tunnel_encap_nested 2 0   drop flow  tunnel  Packet dropped: nested tunnel decapsulation
+These two itmes would be in your global counters. 
