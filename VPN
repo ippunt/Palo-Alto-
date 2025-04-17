@@ -13,9 +13,9 @@ is dynamic or FQDN you will need a peer identification. Both peers need the same
 
 
 3)
-test vpn ike-sa gateway  My_Ike_Gateway;
+test vpn ike-sa gateway  My_Ike_Gateway; initiates IKE phase 1 Tunnel
 show vpn ike-sa gateway My_Ike_Gateway;
-test vpn ipsec-sa tunnel My_Tunnel;
+test vpn ipsec-sa tunnel My_Tunnel; initiates IKE phase 2 Tunnel
 show vpn ipsec-sa tunnel My_Tunnel;
 show vpn flow name My_Site_To_Site;
 
